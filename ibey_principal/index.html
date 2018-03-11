@@ -11,9 +11,10 @@
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/js" href="js/bootstrap.min.js">
 	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
 </head>
-<body>
+<body style="background-color: #F5F5F5">
 	<div class="container" style="margin-left: 70px; margin-right: 70px">
 		<style type="text/css">
 		.container {
@@ -119,8 +120,47 @@
             <button type="button" class="btn btn-sm btn-outline-secondary">Promociones del día</button>
         </div>
 	</div>
-	<div style="margin-left: 70px; margin-right: 70px">
-		
+	<div style="margin-left: 70px; margin-right: 70px; margin-top: 30px">
+
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="C:\wamp64\www\POO\ibey_principal\img\571cf8de-f399-4560-a39b-2610a5e5149987966b.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\wamp64\www\POO\ibey_principal\img\15310_SPSP_LATAM_W10_Flash_876x402b.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\wamp64\www\POO\ibey_principal\img\b5abd748-6f84-4ee2-afc8-188dbbf54997329719b.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      	</div>
+
+      	<script src="C:\wamp64\www\POO\carousel\js\vendor\jquery-1.9.1.min.js"></script>
+      	<script src="C:\wamp64\www\POO\carousel\js\util.js"></script>
+      	<script src="C:\wamp64\www\POO\carousel\js\carousel.js"></script>
+      
+      	<script>
+      	$(function() {
+        // Test to show that the carousel doesn't slide when the current tab isn't visible
+	        $('#carousel-example-generic').on('slid.bs.carousel', function(event) {
+	          console.log('slid at ', event.timeStamp)
+	        })
+      	})
+    	</script>
 	</div>
 </body>
 </html>
