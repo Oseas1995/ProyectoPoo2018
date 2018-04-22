@@ -43,7 +43,17 @@ body {
   border-bottom-left-radius: 0;
 }
 .form-signin input[type="password"] {
-  margin-bottom: -1px;
+  margin-bottom: 15px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.coincide{
+    color: #dd1e31;
+    font-size: 13px;
+}
+
+#div-validar{
+   color: #dd1e31;
+   margin-bottom: 10px;
 }
