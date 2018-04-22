@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="icon" type="image/jpg" href="img/favicon.ico">
     <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
 
@@ -15,6 +13,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/login.css" rel="stylesheet">
+
+    <!-- -->
   </head>
 
   <body >
@@ -34,10 +34,16 @@
               </div>
           </div>
           
-          <form class="form-signin">
-              <input style="margin-bottom: 12px" class="form-control" size="45" type="email" name="txt-usuario" placeholder="Correo electrónico">
-              <input style="margin-bottom: 15px" class="form-control" size="45" type="password" name="txt-contraseña" placeholder="Contraseña">
-              <button class="btn btn-primary btn-block" type="submit">Iniciar sesión</button>
+          <form class="form-signin" method="POST">
+              <input class="form-control" size="45" type="email" name="txt-correo"
+              id="txt-correo" placeholder="Correo electrónico">
+              <div class="invalid-feedback">Campo obligatorio</div>
+              <br>
+              <input class="form-control" size="45" type="password" name="txt-contrasena" id="txt-contrasena" placeholder="Contraseña">
+              <div class="invalid-feedback">Campo obligatorio</div>
+              <div style="margin-bottom: 15px;" class="invalid-feedback">Debe de tener al menos 8 caracteres</div>
+             
+              <button class="btn btn-primary btn-block" id="btn-login" type="button">Iniciar sesión</button>
               <br>
               <div class="checkbox mb-3">
                 <label>
@@ -76,5 +82,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/controlador.js"></script>
   </body>
 </html>
